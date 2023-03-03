@@ -1,0 +1,102 @@
+{% extends "records/base2.html" %}
+{% load static %}
+{% block content %}
+<div class="background-home">
+<div class="block-record">
+    <div class="container">
+        <div class="about-me">
+            <div class="about-me-left">
+                <div class="about-me-left-title">
+                    <h2>
+                        Обо мне
+                    </h2>
+                </div>
+                <div div class="about-me-left-text">
+                    <p>Здравствуйте! Меня зовут Любовь, я мастер ногтевого сервиса с опытом работы более 6 лет. Обладаю знаниями правил и норм обработки маникюрного инструмента. Выполняю комбинированный маникюр, наращивание и укрепление ногтей. Имею опыт работы в топ-салонах. Жду Вас у себя!</p>
+                </div>
+            </div>
+            <div class="about-me-right">
+                <div class="my-photo-block">
+                    <img class="my-photo" src="{% static 'my2.jpg' %}">
+                </div>
+                <div class="button">
+                <a href="{% url 'records:records' %}">Записаться онлайн</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="block-my-works">
+    <div class="container">
+        <div class="title-my-work">
+            <h2>Мои работы</h2>
+        </div>
+        <div>
+            <div class="line-photo-one">
+                <div class="photo-card">
+                    <img class="photo" src="{% static 'work1.jpg' %}">
+                </div>
+                <div class="photo-card">
+                    <img class="photo" src="{% static 'work2.jpg' %}">
+                </div>
+                <div class="photo-card">
+                    <img class="photo" src="{% static 'work9.jpg' %}">
+                </div>
+                <div class="photo-card">
+                    <img class="photo" src="{% static 'work3.jpg' %}">
+                </div>
+                <div class="photo-card">
+                    <img class="photo" src="{% static 'work4.jpg' %}">
+                </div>
+                <div class="photo-card">
+                    <img class="photo" src="{% static 'work5.jpg' %}">
+                </div>
+                <div class="photo-card">
+                    <img class="photo" src="{% static 'work6.jpg' %}">
+                </div>
+                <div class="photo-card">
+                    <img class="photo" src="{% static 'work7.jpg' %}">
+                </div>
+                <div class="photo-card">
+                    <img class="photo" src="{% static 'work8.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block-price">
+    <div class="container">
+        <div class="price-list">
+            <img class="price" src="{% static 'price.jpg' %}">
+        </div>
+    </div>
+</div>
+
+<div class="block-end">
+    <div class="container-end">
+        <div class="contact">
+            <div class="phone-number">
+                <div >
+                    <img class="phone" src="{% static 'phone.webp' %}">
+                </div>
+                <div class="number">
+                    <span>+7-(903)-833-93-20</span>
+                </div>
+            </div>
+            <div class="mail-adress">
+                <div >
+                    <img class="mail" src="{% static 'mail.png' %}">
+                </div>
+                <div class="number">
+                    <span>manicurelovet@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+{% endblock content %}
